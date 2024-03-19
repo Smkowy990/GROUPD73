@@ -1,0 +1,155 @@
+/* Reset styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* إضافة تأثيرات للحركة */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h2,
+.hero p,
+.hero .btn {
+    animation: fadeInUp 1s ease-out;
+}
+
+.services .service {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.3s;
+}
+
+footer {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.6s;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100px;
+    /* تعديل العرض حسب الحجم المطلوب */
+    height: auto;
+    /* تلقائيًا يحافظ على نسبة العرض إلى الارتفاع */
+    vertical-align: middle;
+    /* لتوسيط الصورة داخل العنصر */
+}
+
+body {
+    color: rgb(255, 253, 253);
+    /* لون النص باللون الأبيض */
+}
+
+body {
+    background: #1f0202;
+    /* لون الخلفية #1f0202 */
+    margin: 0;
+    /* إزالة هامش الصفحة */
+    padding: 0;
+    /* إزالة حاشية الصفحة */
+    overflow: hidden;
+    /* تجنب التمرير الأفقي والعمودي */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1f0202;
+    /* لون الخلفية */
+    color: white;
+    /* لون النص */
+    text-decoration: none;
+    /* إزالة التزيين الافتراضي للرابط */
+    border-radius: 5px;
+    /* تقويس الحواف للزر */
+}
